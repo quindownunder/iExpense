@@ -8,9 +8,20 @@
 
 import SwiftUI
 
+class User: ObservableObject {
+    @Published var firstName = "Matthew"
+    @Published var secondName = "Richardson"
+}
+
 struct ContentView: View {
+    
+    @ObservedObject private var user = User()
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Your name is \(user.firstName) \(user.secondName)")
+            TextField("First name", text: $user.firstName)
+            TextField("Second name", text: $user.secondName)
+        }
     }
 }
 
