@@ -13,6 +13,7 @@
 		061343DA24EF49B0009031EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061343D924EF49B0009031EA /* Assets.xcassets */; };
 		061343DD24EF49B0009031EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061343DC24EF49B0009031EA /* Preview Assets.xcassets */; };
 		061343E024EF49B0009031EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061343DE24EF49B0009031EA /* LaunchScreen.storyboard */; };
+		064CC61924EFD1A8008ED9C4 /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064CC61824EFD1A8008ED9C4 /* AddView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		061343DC24EF49B0009031EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		061343DF24EF49B0009031EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		061343E124EF49B0009031EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064CC61824EFD1A8008ED9C4 /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				061343D324EF49AE009031EA /* AppDelegate.swift */,
 				061343D524EF49AE009031EA /* SceneDelegate.swift */,
+				064CC61824EFD1A8008ED9C4 /* AddView.swift */,
 				061343D724EF49AE009031EA /* ContentView.swift */,
 				061343D924EF49B0009031EA /* Assets.xcassets */,
 				061343DE24EF49B0009031EA /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064CC61924EFD1A8008ED9C4 /* AddView.swift in Sources */,
 				061343D424EF49AE009031EA /* AppDelegate.swift in Sources */,
 				061343D624EF49AE009031EA /* SceneDelegate.swift in Sources */,
 				061343D824EF49AE009031EA /* ContentView.swift in Sources */,
