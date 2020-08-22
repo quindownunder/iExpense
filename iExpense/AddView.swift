@@ -14,6 +14,8 @@ struct AddView: View {
     @State private var type = "Personal"
     @State private var amount = ""
     
+    @State private var showingWarning = false
+    
     static let types = ["Business", "Personal"]
     
     @ObservedObject var expenses: Expenses
@@ -37,8 +39,13 @@ struct AddView: View {
                     let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
                     self.expenses.items.append(item)
                     self.presentationMode.wrappedValue.dismiss()
+                } else {
+                    self.showingWarning = true
                 }
             })
+            .alert(isPresented: $showingWarning) {
+                Alert(title: Text("Amount Error"), message: Text("Amount value is not valid"), dismissButton: .default(Text("Ok")))
+            }
         }
     }
 }
